@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+// import 'package:opin_app/pages/dashboard.dart';
+import 'package:opin_app/pages/users.dart';
+
+class screen extends StatelessWidget {
+  const screen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 651,
+      width: 1106,
+     color: Color.fromARGB(255, 3, 71, 80),
+      // child: Dashboard()
+      child: UsersPage(),
+    );
+  }
+}
