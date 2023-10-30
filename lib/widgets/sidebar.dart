@@ -83,13 +83,20 @@ class _SideBarState extends State<SideBar> {
                       MainAxisAlignment.spaceBetween,
                   children: [
                     Row(children: [
-                      const Icon(Icons.image,
-                          color:
-                              Color.fromARGB(255,255,255,255)),
+                      // const Icon(Icons.image,
+                      //     color:
+                      //         Color.fromARGB(255,255,255,255)),
+                      Container(
+                        height: 25,
+                        width: 25,
+                        child: Image.asset('assets/report.png',color: Colors.white,)),
                       const SizedBox(
                         width: 10,
                       ),
-                      DropDown(),
+                      Container(
+                        height: 30,
+
+                        child: DropDown()),
                     ]),
                   ],
                 ),
@@ -98,13 +105,18 @@ class _SideBarState extends State<SideBar> {
                       MainAxisAlignment.spaceBetween,
                   children: [
                     Row(children: [
-                      Icon(Icons.call,
-                          color:
-                              Color.fromARGB(255,255,255,255)),
+                      Container(
+                        height: 25,
+                        width: 25,
+                        
+                        child: Image.asset('assets/record.png')),
+                      // Icon(Icons.call,
+                      //     color:
+                      //         Color.fromARGB(255,255,255,255)),
                       SizedBox(
                         width: 10,
                       ),
-                     Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Call History', weight: FontWeight.w500, size: 4),
+                     Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Recordings', weight: FontWeight.w500, size: 4),
 
                       
                     ]),
@@ -115,13 +127,18 @@ class _SideBarState extends State<SideBar> {
                       MainAxisAlignment.spaceBetween,
                   children: [
                     Row(children: [
-                      Icon(Icons.circle_outlined,
-                          color:
-                              Color.fromARGB(255,255,255,255)),
+                      Container(
+                        height: 25,
+                        width: 25,
+                        
+                        child: Image.asset('assets/service.png',color: Color.fromARGB(255,255,255,255))),
+                      // Icon(Icons.circle_outlined,
+                      //     color:
+                      //         Color.fromARGB(255,255,255,255)),
                       SizedBox(
                         width: 10,
                       ),
-                                           Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Reviews', weight: FontWeight.w500, size: 4),
+                                           Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Services', weight: FontWeight.w500, size: 4),
 
                       
                     ]),
@@ -143,22 +160,51 @@ class _SideBarState extends State<SideBar> {
                     ]),
                   ],
                 ),
-                 Row(
-                  mainAxisAlignment:
-                      MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(children: [
-                      Icon(Icons.request_page,
-                          color:
-                              Color.fromARGB(255,255,255,255)),
-                      SizedBox(
-                        width: 10,
-                      ),
-                       Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Billing', weight: FontWeight.w500, size: 4),
-                      
-                    ]),
-                  ],
-                ),
+                 Row(children: [
+                   Container(
+                     height: 25,
+                     width: 25,
+                     
+                     child: Image.asset('assets/city.png',color: Color.fromARGB(255,255,255,255))),
+                   // Icon(Icons.request_page,
+                   //     color:
+                   //         Color.fromARGB(255,255,255,255)),
+                   SizedBox(
+                     width: 10,
+                   ),
+                    Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Cities', weight: FontWeight.w500, size: 4),
+                   
+                 ]),
+                 Row(children: [
+                   Container(
+                     height: 25,
+                     width: 25,
+                     
+                     child: Image.asset('assets/smartphone.png',color: Color.fromARGB(255,255,255,255))),
+                   // Icon(Icons.request_page,
+                   //     color:
+                   //         Color.fromARGB(255,255,255,255)),
+                   SizedBox(
+                     width: 10,
+                   ),
+                    Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'Oopin App', weight: FontWeight.w500, size: 4),
+                   
+                 ]),
+                 Row(children: [
+                   Container(
+                     height: 25,
+                     width: 25,
+                     
+                     child: Image.asset('assets/smartphone.png',color: Color.fromARGB(255,255,255,255))),
+                   // Icon(Icons.request_page,
+                   //     color:
+                   //         Color.fromARGB(255,255,255,255)),
+                   SizedBox(
+                     width: 10,
+                   ),
+                    Multi(color: Color.fromARGB(255,255,255,255), subtitle: 'User App', weight: FontWeight.w500, size: 4),
+                   
+                 ]),
                SizedBox(
                 height: 200,
                )

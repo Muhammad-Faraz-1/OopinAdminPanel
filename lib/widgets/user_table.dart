@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/datafortable.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/user_box.dart';
 
 class UserTable extends StatelessWidget {
   const UserTable({super.key});
@@ -14,7 +15,7 @@ class UserTable extends StatelessWidget {
           width: 1100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: Color.fromARGB(255, 252, 145, 63),
+            color: const Color.fromARGB(255, 252, 145, 63),
           ),
           child: Padding(
             padding: const EdgeInsets.all(2),
@@ -67,7 +68,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -76,7 +77,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -86,7 +87,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -95,7 +96,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -109,7 +110,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -118,7 +119,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -128,7 +129,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -137,7 +138,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -151,7 +152,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -160,7 +161,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -170,7 +171,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -179,7 +180,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -193,7 +194,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -202,7 +203,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -212,7 +213,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -221,7 +222,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -235,7 +236,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -244,7 +245,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -254,7 +255,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -263,7 +264,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -277,7 +278,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -286,7 +287,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -296,7 +297,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -305,7 +306,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -319,7 +320,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -328,7 +329,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -338,7 +339,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -347,7 +348,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -361,7 +362,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -370,7 +371,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -380,7 +381,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -389,7 +390,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -403,7 +404,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -412,7 +413,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -422,7 +423,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -431,7 +432,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -445,7 +446,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -454,7 +455,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -464,7 +465,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -473,7 +474,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -487,7 +488,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -496,7 +497,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -506,7 +507,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -515,7 +516,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -529,7 +530,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -538,7 +539,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -548,7 +549,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -557,7 +558,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -571,7 +572,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -580,7 +581,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -590,7 +591,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -599,7 +600,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -613,7 +614,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -622,7 +623,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -632,7 +633,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -641,7 +642,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -654,7 +655,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -663,7 +664,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -673,7 +674,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -682,7 +683,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -696,7 +697,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -705,7 +706,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -715,7 +716,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -724,7 +725,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -738,7 +739,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -747,7 +748,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -757,7 +758,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -766,7 +767,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -779,7 +780,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -788,7 +789,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -798,7 +799,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -807,7 +808,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -820,7 +821,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -829,7 +830,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -839,7 +840,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -848,7 +849,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -861,7 +862,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -870,7 +871,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -880,7 +881,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -889,7 +890,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -902,7 +903,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -911,7 +912,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -921,7 +922,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -930,7 +931,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -943,7 +944,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -952,7 +953,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -962,7 +963,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -971,7 +972,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -984,7 +985,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -993,7 +994,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -1003,7 +1004,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -1012,7 +1013,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -1025,7 +1026,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -1034,7 +1035,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -1044,7 +1045,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -1053,7 +1054,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -1066,7 +1067,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 30,
                                 width: 30,
@@ -1075,7 +1076,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Muhammad Faraz')
                           ],
                         )),
@@ -1085,7 +1086,7 @@ class UserTable extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 15,
-                              backgroundColor: Color.fromARGB(100, 0, 0, 0),
+                              backgroundColor: const Color.fromARGB(100, 0, 0, 0),
                               child: Container(
                                 height: 20,
                                 width: 20,
@@ -1094,7 +1095,7 @@ class UserTable extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 15),
+                            const SizedBox(width: 15),
                             TableText(text: 'Editor')
                           ],
                         )),
@@ -1108,5 +1109,122 @@ class UserTable extends StatelessWidget {
             ),
           )),
      );
+  }
+}
+
+
+
+class UserTable2 extends StatelessWidget {
+  const UserTable2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 400,
+      // width: 500,
+      child: const SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                UserBox(),
+                UserBox(),
+                UserBox(),
+                 UserBox(),
+              ],
+              
+            ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                UserBox(),
+                UserBox(),
+                UserBox(),
+                 UserBox(),
+              ],
+            ),SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                UserBox(),
+                UserBox(),
+                UserBox(),
+                 UserBox(),
+              ],
+            ),SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                UserBox(),
+                UserBox(),
+                UserBox(),
+                 UserBox(),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+class OopinTable extends StatelessWidget {
+  const OopinTable({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 400,
+      // width: 500,
+      child: const SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                OopinBox(),
+                OopinBox(),
+                OopinBox(),
+                 OopinBox(),
+              ],
+              
+            ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                OopinBox(),
+                OopinBox(),
+                OopinBox(),
+                 OopinBox(),
+              ],
+            ),SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                OopinBox(),
+                OopinBox(),
+                OopinBox(),
+                 OopinBox(),
+              ],
+            ),SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                OopinBox(),
+                OopinBox(),
+                OopinBox(),
+                 OopinBox(),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );;
   }
 }

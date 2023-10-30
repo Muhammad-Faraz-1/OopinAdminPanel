@@ -9,7 +9,7 @@ class UsersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
+      height: 140,
       width: 300,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -164,12 +164,12 @@ class UsersPage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(width: 10,),
-                                TextButton(onPressed: (){}, child:Multi(color: Colors.white, subtitle: 'Add User', weight: FontWeight.w200, size: 4),)
+                               // TextButton(onPressed: (){}, child:Multi(color: Colors.white, subtitle: 'Add User', weight: FontWeight.w200, size: 4),)
                       ],
                     )
                   ],),
                 ),
-                const UserTable(),
+                const UserTable2(),
               ],
             )),
           ],

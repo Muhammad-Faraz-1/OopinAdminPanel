@@ -24,3 +24,25 @@ class Multi extends StatelessWidget {
     );
   }
 }
+
+class UnderlineMulti extends StatelessWidget {
+   UnderlineMulti({super.key,required this.color,required this.subtitle,required this.weight,required this.size});
+Color? color;
+  String? subtitle;
+  FontWeight? weight;
+  double? size;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text(
+  subtitle!,
+  style: GoogleFonts.montserrat(
+    textStyle: TextStyle(color: color, letterSpacing: 0.2,fontSize: size?.sp,fontWeight: weight,decoration: TextDecoration.underline),
+  ),
+  textAlign: TextAlign.start,
+  
+),
+
+    );
+  }
+}
