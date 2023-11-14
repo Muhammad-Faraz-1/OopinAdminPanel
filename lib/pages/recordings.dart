@@ -10,20 +10,20 @@ class RecordingsPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
       child: Container(
-        height: 200,
+        height: 150,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Multi(
-                        color: Color.fromARGB(255, 255, 255, 255),
+                        color: const Color.fromARGB(255, 255, 255, 255),
                         subtitle: 'Recordings',
                         weight: FontWeight.w500,
                         size: 5),
                         Row( 
                       children: [
                         Multi(color: Colors.white, subtitle: 'Search Oopin', weight: FontWeight.w500, size: 4),
-                        SizedBox(width: 10,),
+                        const SizedBox(width: 10,),
                         Container(
                           height: 40,
                           width: 250,
@@ -56,21 +56,18 @@ class RecordingsPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(width: 10,),
-                               // TextButton(onPressed: (){}, child:Multi(color: Colors.white, subtitle: 'Add User', weight: FontWeight.w200, size: 4),)
+                        const SizedBox(width: 10,),
                       ],
                     ),
-                    SizedBox(width: 20,),
-              RecordArea(name: 'faraz',),
-              SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
-              RecordArea(name: 'faraz',),SizedBox(width: 10,),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
+              RecordArea(),
               
           ]),
         ),

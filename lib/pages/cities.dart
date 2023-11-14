@@ -47,7 +47,7 @@ class Cities extends StatelessWidget {
                                 color: const Color.fromARGB(255, 3, 71, 80),
                             ),
                                 child: const Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5,vertical: 10),
+                                  padding: EdgeInsets.symmetric(horizontal: 5,),
                                   child: TextField(
                                     cursorColor: Colors.white,
                                     style: TextStyle(color: Colors.white),

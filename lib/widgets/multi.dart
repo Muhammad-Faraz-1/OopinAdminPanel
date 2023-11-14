@@ -14,11 +14,13 @@ class Multi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Text(
+        
   subtitle!,
   style: GoogleFonts.montserrat(
-    textStyle: TextStyle(color: color, letterSpacing: 0.2,fontSize: size?.sp,fontWeight: weight),
+    textStyle: TextStyle(color: color, letterSpacing: 0.2,fontSize: size?.sp,fontWeight: weight,),
   ),
   textAlign: TextAlign.start,
+  softWrap: true,
 ),
 
     );

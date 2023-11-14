@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/statemanager/provider.dart';
+import 'package:opin_app/widgets/delete_service.dart';
+import 'package:opin_app/widgets/deleteuser.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:provider/provider.dart';
 
-class AddService extends StatelessWidget {
-  AddService({super.key});
+class EditService extends StatelessWidget {
+  String? serviceName;
+  EditService({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,82 +37,67 @@ class AddService extends StatelessWidget {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Multi(
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                          subtitle: 'Add Service:',
-                          weight: FontWeight.w600,
-                          size: 5),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Multi(
+                              color: const Color.fromARGB(255, 255, 255, 255),
+                              subtitle: 'Edit Service:',
+                              weight: FontWeight.w600,
+                              size: 5),
+                              Container(
+                              height: 30,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: Color.fromARGB(255, 252, 145, 63),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(1.5),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Color.fromARGB(255, 250, 2, 2),
+                                  ),
+                                  child: TextButton(
+                                    onPressed: () {
+                                      showDialog(
+                                context: context,
+                                builder: (context) => DeleteService2());
+                          },
+                                    child: Multi(
+                                        color: Color.fromARGB(255, 255, 255, 255),
+                                        subtitle: 'Delete',
+                                        weight: FontWeight.w600,
+                                        size: 3),
+                                  ),
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
                       const SizedBox(
                         height: 20,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             height: 40,
                             width: 250,
-                            child: TextFormField(
-                              controller: name_service,
-                              cursorColor: Colors.white,
-                              style: const TextStyle(color: Colors.white),
-                              decoration: const InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(
-                                    vertical: 5, horizontal: 5),
-                                hintStyle: TextStyle(
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    fontWeight: FontWeight.w300),
-                                focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: const Color.fromARGB(
-                                            255, 252, 145, 63))),
-                                enabledBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: const Color.fromARGB(
-                                            255, 252, 145, 63))),
-                                hintText: 'Service Name',
-                                filled: true,
-                                fillColor: Color.fromARGB(255, 3, 71, 80),
-                                border: UnderlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(15))),
-                              ),
-                            ),
+                            child: Multi(
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                                subtitle: Provider11.ServiceName,
+                                weight: FontWeight.w600,
+                                size: 4.5),
                           ),
                           const SizedBox(
                             width: 10,
                           ),
                           Container(
-                            height: 40,
-                            width: 250,
-                            child: TextFormField(
-                              controller: service_img_link,
-                              cursorColor: Colors.white,
-                              style: const TextStyle(color: Colors.white),
-                              decoration: const InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(
-                                    vertical: 5, horizontal: 5),
-                                hintStyle: TextStyle(
-                                    color: Color.fromARGB(255, 255, 255, 255),
-                                    fontWeight: FontWeight.w300),
-                                focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: const Color.fromARGB(
-                                            255, 252, 145, 63))),
-                                enabledBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
-                                        width: 3,
-                                        color: const Color.fromARGB(
-                                            255, 252, 145, 63))),
-                                hintText: 'Service Image',
-                                filled: true,
-                                fillColor: Color.fromARGB(255, 3, 71, 80),
-                                border: UnderlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(15))),
-                              ),
-                            ),
+                            height:80,
+                            width: 80,
+                            child: Image.network('assets/lahore.jpg'),
                           ),
                         ],
                       ),
@@ -118,47 +106,121 @@ class AddService extends StatelessWidget {
                       ),
                       Multi(
                           color: const Color.fromARGB(255, 255, 255, 255),
-                          subtitle: 'Add Sub Service:',
-                          weight: FontWeight.w600,
-                          size: 5),
+                          subtitle: 'Sub Service:',
+                          weight: FontWeight.w400,
+                          size: 4),
                       const SizedBox(
                         height: 20,
                       ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            flex: 5,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Multi(
+                                      color: Colors.white,
+                                      subtitle: 'Halal',
+                                      weight: FontWeight.w400,
+                                      size: 4),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  Container(
+                                    height: 50,
+                                    width: 50,
+                                    child: Image.network('assets/lahore.jpg'),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: IconButton(onPressed: () {
+                              showDialog(
+                            context: context,
+                            builder: (context) => RemoveService());
+                            },
+                            icon: Image.asset('assets/bin.png',color: Colors.white,),
+                            iconSize: 10,
+                            ),
+                          ),
+                        ],
+                      ),
+                      
                       ListView.builder(
                           shrinkWrap: true,
                           itemCount: Provider11.subservices.length,
                           itemBuilder: (context, index) {
                             return Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Multi(
-                                    color: Colors.white,
-                                    subtitle: (index + 1).toString(),
-                                    weight: FontWeight.w600,
-                                    size: 4),
-                                const SizedBox(
-                                  width: 20,
+                                SizedBox(
+                                  height: 10,
                                 ),
-
-                                // Image.network('https://cdn-icons-png.flaticon.com/128/2802/2802966.png'),
-                                
-                                const SizedBox(
-                                  width: 20,
+                                Expanded(
+                                  flex: 5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        // Multi(
+                                        //     color: Colors.white,
+                                        //     subtitle: (index + 1).toString(),
+                                        //     weight: FontWeight.w600,
+                                        //     size: 4),
+                                        // const SizedBox(
+                                        //   width: 20,
+                                        // ),
+                                                              
+                                        // Image.network('https://cdn-icons-png.flaticon.com/128/2802/2802966.png'),
+                                                              
+                                        
+                                        Flexible(
+                                          child: Multi(
+                                            
+                                          color: Colors.white,
+                                          subtitle: Provider11.subservices[index]
+                                              .name_sub_service,
+                                              weight: FontWeight.w400,
+                                              size: 4),
+                                        ),
+                                        const SizedBox(
+                                          width: 20,
+                                        ),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          // child: Image.network(
+                                          //     sub_service_img_link.text),
+                                          child: Image.network('assets/lahore.jpg'),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                                Multi(
-                                    color: Colors.white,
-                                    subtitle: Provider11
-                                        .subservices[index].name_sub_service,
-                                    weight: FontWeight.w600,
-                                    size: 4),
-                                const SizedBox(
-                                  width: 20,
-                                ),
-                                Container(
-                                  height: 50,
-                                  width: 50,
-                                  child:
-                                      Image.network(sub_service_img_link.text),
-                                ),
+                                Expanded(
+                            flex: 1,
+                            child:Container(
+                              height: 15,
+                              width: 15,
+                              child: IconButton(onPressed: () {
+                                showDialog(
+                              context: context,
+                              builder: (context) => RemoveService());
+                              },
+                              icon: Image.asset('assets/bin.png',color: Colors.white,),
+                              iconSize: 50,
+                              
+                              ),
+                            ),
+                          ),
                               ],
                             );
                           }),
@@ -176,7 +238,9 @@ class AddService extends StatelessWidget {
                                     vertical: 5, horizontal: 5),
                                 hintStyle: TextStyle(
                                     color: Color.fromARGB(255, 255, 255, 255),
-                                    fontWeight: FontWeight.w300),
+                                    fontWeight: FontWeight.w300,
+                                    fontSize: 15,
+                                    ),
                                 focusedBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         width: 3,
@@ -188,6 +252,7 @@ class AddService extends StatelessWidget {
                                         color: const Color.fromARGB(
                                             255, 252, 145, 63))),
                                 hintText: 'Sub Service Name',
+                                
                                 filled: true,
                                 fillColor: Color.fromARGB(255, 3, 71, 80),
                                 border: UnderlineInputBorder(
@@ -211,7 +276,8 @@ class AddService extends StatelessWidget {
                                     vertical: 5, horizontal: 5),
                                 hintStyle: TextStyle(
                                     color: Color.fromARGB(255, 255, 255, 255),
-                                    fontWeight: FontWeight.w300),
+                                    fontWeight: FontWeight.w300,
+                                    fontSize: 15,),
                                 focusedBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         width: 3,

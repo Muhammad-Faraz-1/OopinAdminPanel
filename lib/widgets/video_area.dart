@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opin_app/widgets/diagonal_box.dart';
 import 'package:opin_app/widgets/multi.dart';
 
 class VideoArea extends StatelessWidget {
@@ -7,38 +8,144 @@ class VideoArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-                        height: 220,
-                        width: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: Color.fromARGB(255, 252, 145, 63)),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 180,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                    color: Colors.black,
-                                    ),
-                                  ),
-                                  SizedBox(height: 5,),
-                                  Multi(
-                                                  color: Color.fromARGB(255, 3, 71, 80),
-                                                  subtitle: 'Date:',
-                                                  weight: FontWeight.w400,
-                                                  size: 4),
-                                                  Multi(
-                                                  color: Color.fromARGB(255, 3, 71, 80),
-                                                  subtitle: 'Duration:',
-                                                  weight: FontWeight.w400,
-                                                  size: 4),
-                                ],
-                              ),
-                            ),
-                      );
+      height: 240,
+      width: 340,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: const Color.fromARGB(255, 3, 71, 80)),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+           
+            Stack(
+              children: [
+                Container(
+                  height: 150,
+                  width: 350,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.black,
+                  ),
+                  child:  DiagonalContainer(),
+                ),
+                Positioned(
+                  bottom: 10,
+                  right: 10,
+                  child: Container(
+                    height: 20,
+                    width:40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Colors.black45,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5,vertical:3 ),
+                      child: Multi(color: const Color.fromARGB(255, 255, 255, 255),
+                                          subtitle: '15:20',
+                                          weight: FontWeight.w400,
+                                          size: 3),
+                    ),
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                          height: 35,
+                          width: 35,
+                          child: const CircleAvatar(
+                            radius: 25,
+                            backgroundImage: AssetImage('assets/lahore.jpg'),
+                          ),
+                        ),
+                         const SizedBox(width: 10,),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Multi(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    subtitle: 'Suggests to Sami',
+                    weight: FontWeight.w500,
+                    size: 5),
+                     Multi(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    subtitle: 'Faraz',
+                    weight: FontWeight.w300,
+                    size: 3),
+                     Multi(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    subtitle: 'Date: 12/Dec/2023',
+                    weight: FontWeight.w200,
+                    size: 3),
+                  ],
+                ),
+                  ],
+                ),
+                   
+                PopupMenuButton(
+                  constraints: const BoxConstraints.expand(width: 180, height: 170),
+                    itemBuilder: (context){
+                      return [
+                   PopupMenuItem<int>(
+                      value: 0,
+                      child: Row(children: [
+                        Container(
+                          height: 20,
+                          width: 20,
+                          child: Image.asset('assets/queue.png')),SizedBox(width: 10,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Add to Queue', weight: FontWeight.w500, size: 4),
+                      ],),
+                  ),
+                
+                   PopupMenuItem<int>(
+                      value: 1,
+                      child: Row(children: [
+                        Container(
+                          height: 20,
+                          width: 20,
+                          child: Image.asset('assets/download.png')),SizedBox(width: 10,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Download', weight: FontWeight.w500, size: 4),
+                      ],),
+                  ),
+                
+                   PopupMenuItem<int>(
+                      value: 2,
+                      child: Row(children: [
+                        Container(
+                          height: 20,
+                          width: 20,
+                          child: Image.asset('assets/share.png')),SizedBox(width: 10,),
+                        Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Share', weight: FontWeight.w500, size: 4),
+                      ],),
+                  ),
+                        ];
+                    },
+                //     onSelected:(value){
+                //       if(value == 0){
+                // print("My account menu is selected.");
+                //       }else if(value == 1){
+                // print("Settings menu is selected.");
+                //       }else if(value == 2){
+                // print("Logout menu is selected.");
+                //       }
+                //     }
+                  ),
+              ],
+            ),
+            
+          ],
+        ),
+      ),
+    );
   }
 }

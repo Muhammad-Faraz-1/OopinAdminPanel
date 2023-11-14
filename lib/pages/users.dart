@@ -31,7 +31,7 @@ class UsersPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Multi(
-                      color: const Color.fromARGB(255, 252, 145, 63),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       subtitle: 'Search Filters',
                       weight: FontWeight.w500,
                       size: 5),
@@ -43,30 +43,6 @@ class UsersPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 50,
-                    width: 300,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: const Color.fromARGB(255, 252, 145, 63),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(2),
-                      child: SearchDropDown(),
-                    ),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 300,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: const Color.fromARGB(255, 252, 145, 63),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(2),
-                      child: SearchDropDown(),
-                    ),
-                  ),
                   Container(
                     height: 50,
                     width: 300,

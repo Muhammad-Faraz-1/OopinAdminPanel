@@ -254,8 +254,31 @@ class _SideBarState extends State<SideBar> {
                       weight: FontWeight.w500,
                       size: 4),
                 ]),
+                Row(children: [
+                  Container(
+                      height: 25,
+                      width: 25,
+                      child: Image.asset('assets/help.png',
+                          color: Color.fromARGB(255, 255, 255, 255))),
+                  // Icon(Icons.request_page,
+                  //     color:
+                  //         Color.fromARGB(255,255,255,255)),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  GestureDetector(
+                     onTap: () {
+                              Provider11.currentActive(8);
+                            },
+                    child: Multi(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        subtitle: 'Help Desk',
+                        weight: FontWeight.w500,
+                        size: 4),
+                  ),
+                ]),
                 SizedBox(
-                  height: 200,
+                  height: 180,
                 )
               ]),
         ));

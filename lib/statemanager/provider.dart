@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Provider1 extends ChangeNotifier {
-  var lastAction ;
+  var lastAction;
+  var status = 1;
+  bool ishover = false;
+  String? ServiceName;
 
   List<SubServices> subservices = [];
 
@@ -13,6 +16,23 @@ class Provider1 extends ChangeNotifier {
   currentActive(var pressed) {
     lastAction = pressed;
     print(lastAction);
+    notifyListeners();
+  }
+
+  currentpressed(var index) {
+    status = index;
+    print(status);
+    notifyListeners();
+  }
+
+  ishovering(bool hover) {
+    ishover = hover;
+    print(ishover);
+    notifyListeners();
+  }
+
+  serviceName(String name) {
+    ServiceName = name;
     notifyListeners();
   }
 }

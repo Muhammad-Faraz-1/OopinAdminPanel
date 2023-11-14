@@ -17,7 +17,7 @@ class PopUp extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(2),
           child: Container(
-            height: 350,
+            height: 400,
             width: 400,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
@@ -28,31 +28,15 @@ class PopUp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 70,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: Color.fromARGB(255, 252, 145, 63),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(3),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40),
-                          color: Colors.white,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(2),
-                          child: CircleAvatar(
-                            radius: 35,
-                            backgroundImage: AssetImage('assets/microsoft.png'),
-                          ),
-                        ),
-                      ),
-                    ),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Icon(Icons.cancel_rounded)),
                   ),
-                  OopinInfo(),
+                  OopinInfo(),SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -68,7 +52,7 @@ class PopUp extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color.fromARGB(255, 3, 71, 80),
+                              color: Color.fromARGB(255, 2, 250, 6),
                             ),
                             child: TextButton(
                               onPressed: () {
@@ -76,10 +60,10 @@ class PopUp extends StatelessWidget {
                                 // showDialog(context: context, builder: (context)=>PopUp());
                               },
                               child: Multi(
-                                  color: Color.fromARGB(255, 252, 145, 63),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   subtitle: 'Accept',
-                                  weight: FontWeight.w400,
-                                  size: 3.5),
+                                  weight: FontWeight.w600,
+                                  size: 4),
                             ),
                           ),
                         ),
@@ -96,18 +80,18 @@ class PopUp extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color.fromARGB(255, 3, 71, 80),
+                              color: Color.fromARGB(255, 250, 2, 2),
                             ),
                             child: TextButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
-                                // showDialog(context: context, builder: (context)=>PopUp());
+                               
                               },
                               child: Multi(
-                                  color: Color.fromARGB(255, 252, 145, 63),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   subtitle: 'Reject with message',
-                                  weight: FontWeight.w400,
-                                  size: 3.5),
+                                  weight: FontWeight.w600,
+                                  size: 4),
                             ),
                           ),
                         ),
