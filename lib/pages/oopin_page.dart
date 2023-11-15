@@ -21,7 +21,7 @@ class OopinPage extends StatelessWidget {
                 color: const Color.fromARGB(255, 255, 255, 255),
                 subtitle: 'OOPINS',
                 weight: FontWeight.w500,
-                size: 5),
+                size: 6),
                 const SizedBox(
                   height: 15,
                 ),

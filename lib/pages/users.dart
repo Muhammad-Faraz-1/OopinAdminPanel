@@ -21,7 +21,7 @@ class UsersPage extends StatelessWidget {
                 color: const Color.fromARGB(255, 255, 255, 255),
                 subtitle: 'Users',
                 weight: FontWeight.w500,
-                size: 5),
+                size: 6),
                 const SizedBox(
                   height: 15,
                 ),

@@ -19,7 +19,7 @@ class Requests extends StatelessWidget {
                                   color: const Color.fromARGB(255, 255, 255, 255),
                                   subtitle: 'Oopins Requests',
                                   weight: FontWeight.w500,
-                                  size: 5),
+                                  size: 6),
                                   const SizedBox(
                                     height: 15,
                                   ),

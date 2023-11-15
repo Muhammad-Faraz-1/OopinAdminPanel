@@ -30,36 +30,6 @@ class Services extends StatelessWidget {
               ),
               Row(
                 children: [
-                  // Container(
-                  //   height: 35,
-                  //   width: 120,
-                  //   decoration: BoxDecoration(
-                  //     borderRadius: BorderRadius.circular(15),
-                  //     color: const Color.fromARGB(255, 252, 145, 63),
-                  //   ),
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.all(1.5),
-                  //     child: Container(
-                  //       decoration: BoxDecoration(
-                  //         borderRadius: BorderRadius.circular(15),
-                  //         color: const Color.fromARGB(255, 255, 255, 255),
-                  //       ),
-                  //       child: TextButton(
-                  //         onPressed: () {
-                           
-                  //         },
-                  //         child: Multi(
-                  //             color: const Color.fromARGB(255, 252, 145, 63),
-                  //             subtitle: 'Edit Service',
-                  //             weight: FontWeight.w600,
-                  //             size: 4),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
-                  // const SizedBox(
-                  //   width: 15,
-                  // ),
                   Container(
                     height: 35,
                     width: 120,

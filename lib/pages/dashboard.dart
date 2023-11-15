@@ -27,7 +27,7 @@ class Dashboard extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 255, 255),
                     subtitle: 'DashBoard',
                     weight: FontWeight.w500,
-                    size: 5),
+                    size: 6),
               ),
               SizedBox(
                 height: 20,

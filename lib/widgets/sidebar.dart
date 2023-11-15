@@ -34,8 +34,11 @@ class _SideBarState extends State<SideBar> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Icon(Icons.dashboard,
-                              color: Color.fromARGB(255, 255, 255, 255)),
+                          Container(
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/dashboard.png',
+                              color: Color.fromARGB(255, 255, 255, 255))),
                           SizedBox(
                             width: 10,
                           ),
@@ -59,8 +62,11 @@ class _SideBarState extends State<SideBar> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(Icons.person,
-                              color: Color.fromARGB(255, 255, 255, 255)),
+                          Container(
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/user.png',
+                              color: Color.fromARGB(255, 255, 255, 255))),
                           SizedBox(
                             width: 10,
                           ),
@@ -81,8 +87,11 @@ class _SideBarState extends State<SideBar> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(children: [
-                      Icon(Icons.document_scanner,
-                          color: Color.fromARGB(255, 255, 255, 255)),
+                      Container(
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/user.png',
+                              color: Color.fromARGB(255, 255, 255, 255))),
                       SizedBox(
                         width: 10,
                       ),
@@ -105,10 +114,10 @@ class _SideBarState extends State<SideBar> {
                     Row(children: [
                       
                       Container(
-                          height: 25,
-                          width: 25,
+                          height: 15,
+                          width: 15,
                           child: Image.asset(
-                            'assets/report.png',
+                            'assets/warning.png',
                             color: Colors.white,
                           )),
                       const SizedBox(
@@ -127,9 +136,9 @@ class _SideBarState extends State<SideBar> {
                   children: [
                     Row(children: [
                       Container(
-                          height: 25,
-                          width: 25,
-                          child: Image.asset('assets/record.png')),
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/button.png',color: Colors.white,)),
                       
                       SizedBox(
                         width: 10,
@@ -152,9 +161,9 @@ class _SideBarState extends State<SideBar> {
                   children: [
                     Row(children: [
                       Container(
-                          height: 25,
-                          width: 25,
-                          child: Image.asset('assets/service.png',
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/customer.png',
                               color: Color.fromARGB(255, 255, 255, 255))),
                     
                       SizedBox(
@@ -177,8 +186,11 @@ class _SideBarState extends State<SideBar> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(children: [
-                      Icon(Icons.group,
-                          color: Color.fromARGB(255, 255, 255, 255)),
+                      Container(
+                          height: 15,
+                          width: 15,
+                          child: Image.asset('assets/feedback.png',
+                              color: Color.fromARGB(255, 255, 255, 255))),
                       SizedBox(
                         width: 10,
                       ),
@@ -197,13 +209,10 @@ class _SideBarState extends State<SideBar> {
                 ),
                 Row(children: [
                   Container(
-                      height: 25,
-                      width: 25,
+                      height: 15,
+                      width: 15,
                       child: Image.asset('assets/city.png',
                           color: Color.fromARGB(255, 255, 255, 255))),
-                  // Icon(Icons.request_page,
-                  //     color:
-                  //         Color.fromARGB(255,255,255,255)),
                   SizedBox(
                     width: 10,
                   ),
@@ -220,13 +229,10 @@ class _SideBarState extends State<SideBar> {
                 ]),
                 Row(children: [
                   Container(
-                      height: 25,
-                      width: 25,
+                      height: 15,
+                      width: 15,
                       child: Image.asset('assets/smartphone.png',
                           color: Color.fromARGB(255, 255, 255, 255))),
-                  // Icon(Icons.request_page,
-                  //     color:
-                  //         Color.fromARGB(255,255,255,255)),
                   SizedBox(
                     width: 10,
                   ),
@@ -238,13 +244,10 @@ class _SideBarState extends State<SideBar> {
                 ]),
                 Row(children: [
                   Container(
-                      height: 25,
-                      width: 25,
+                      height: 15,
+                      width: 15,
                       child: Image.asset('assets/smartphone.png',
                           color: Color.fromARGB(255, 255, 255, 255))),
-                  // Icon(Icons.request_page,
-                  //     color:
-                  //         Color.fromARGB(255,255,255,255)),
                   SizedBox(
                     width: 10,
                   ),
@@ -256,13 +259,10 @@ class _SideBarState extends State<SideBar> {
                 ]),
                 Row(children: [
                   Container(
-                      height: 25,
-                      width: 25,
+                      height: 15,
+                      width: 15,
                       child: Image.asset('assets/help.png',
                           color: Color.fromARGB(255, 255, 255, 255))),
-                  // Icon(Icons.request_page,
-                  //     color:
-                  //         Color.fromARGB(255,255,255,255)),
                   SizedBox(
                     width: 10,
                   ),

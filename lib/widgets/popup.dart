@@ -34,7 +34,7 @@ class PopUp extends StatelessWidget {
                         onTap: () {
                           Navigator.of(context).pop();
                         },
-                        child: Icon(Icons.cancel_rounded)),
+                        child: Icon(Icons.cancel_rounded,color: Colors.white,)),
                   ),
                   OopinInfo(),SizedBox(height: 20,),
                   Row(

@@ -19,7 +19,7 @@ class RecordingsPage extends StatelessWidget {
                         color: const Color.fromARGB(255, 255, 255, 255),
                         subtitle: 'Recordings',
                         weight: FontWeight.w500,
-                        size: 5),
+                        size: 6),
                         Row( 
                       children: [
                         Multi(color: Colors.white, subtitle: 'Search Oopin', weight: FontWeight.w500, size: 4),

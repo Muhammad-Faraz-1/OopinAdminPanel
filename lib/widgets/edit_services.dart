@@ -146,8 +146,12 @@ class EditService extends StatelessWidget {
                             context: context,
                             builder: (context) => RemoveService());
                             },
-                            icon: Image.asset('assets/bin.png',color: Colors.white,),
-                            iconSize: 10,
+                            icon: Container(
+                              height: 20,
+                              width: 20,
+                              child: Image.asset('assets/bin.png',color: Colors.white,)),
+                            iconSize: 50,
+                            
                             ),
                           ),
                         ],
@@ -215,7 +219,10 @@ class EditService extends StatelessWidget {
                               context: context,
                               builder: (context) => RemoveService());
                               },
-                              icon: Image.asset('assets/bin.png',color: Colors.white,),
+                              icon: Container(
+                                height: 20,
+                                width: 20,
+                                child: Image.asset('assets/bin.png',color: Colors.white,)),
                               iconSize: 50,
                               
                               ),

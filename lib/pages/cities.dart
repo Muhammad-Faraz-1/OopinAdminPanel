@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opin_app/widgets/add_city.dart';
 import 'package:opin_app/widgets/city_box.dart';
 import 'package:opin_app/widgets/multi.dart';
 
@@ -18,57 +19,93 @@ class Cities extends StatelessWidget {
                         color: const Color.fromARGB(255, 255, 255, 255),
                         subtitle: 'Cities',
                         weight: FontWeight.w500,
-                        size: 5),
+                        size: 6),
                         const SizedBox(
                           height: 15,
                         ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Multi(
-                            color: const Color.fromARGB(255, 252, 145, 63),
-                            subtitle: 'Search Cities:',
-                            weight: FontWeight.w500,
-                            size: 5),
-                            SizedBox(width: 20,),
-                             Container(
-                            height: 50,
-                            width: 300,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              // color: const Color.fromARGB(255, 252, 145, 63)
-                              color: Colors.white,
-                            ),
-                            child:  Padding(
-                              padding: const EdgeInsets.all(2),
-                              child: Container(
-                                decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                                color: const Color.fromARGB(255, 3, 71, 80),
-                            ),
-                                child: const Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5,),
-                                  child: TextField(
-                                    cursorColor: Colors.white,
-                                    style: TextStyle(color: Colors.white),
-                                    decoration: InputDecoration(
-                                      
-                                      filled: true,
-                                      fillColor: Color.fromARGB(255, 3, 71, 80),
-                                      border: OutlineInputBorder(borderSide:BorderSide.none,
-                                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Multi(
+                                  color: const Color.fromARGB(255, 252, 145, 63),
+                                  subtitle: 'Search Cities:',
+                                  weight: FontWeight.w500,
+                                  size: 5),
+                                  const SizedBox(width: 20,),
+                                   Container(
+                                  height: 50,
+                                  width: 300,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    // color: const Color.fromARGB(255, 252, 145, 63)
+                                    color: Colors.white,
+                                  ),
+                                  child:  Padding(
+                                    padding: const EdgeInsets.all(2),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                      color: const Color.fromARGB(255, 3, 71, 80),
+                                  ),
+                                      child: const Padding(
+                                        padding: EdgeInsets.symmetric(horizontal: 5,),
+                                        child: TextField(
+                                          cursorColor: Colors.white,
+                                          style: TextStyle(color: Colors.white),
+                                          decoration: InputDecoration(
+                                            
+                                            filled: true,
+                                            fillColor: Color.fromARGB(255, 3, 71, 80),
+                                            border: OutlineInputBorder(borderSide:BorderSide.none,
+                                            borderRadius: BorderRadius.all(Radius.circular(15))),
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ),
-                            ),
-                          )
-                      ],
+                                )
+                            ],
+                          ),
+                          Container(
+                      height: 35,
+                      width: 120,
+                      decoration: const BoxDecoration(
+                        // borderRadius: BorderRadius.circular(15),
+                        color: Color.fromARGB(255, 252, 145, 63),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(1.5),
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            // borderRadius: BorderRadius.circular(15),
+                            color: Color.fromARGB(255, 3, 71, 80),
+                          ),
+                          child: TextButton(
+                            onPressed: () {
+                              showDialog(
+                                  context: context,
+                                  builder: ((context) => const AddCity()));
+                            },
+                            child: Multi(
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                                subtitle: 'Add City',
+                                weight: FontWeight.w600,
+                                size: 4),
+                          ),
+                        ),
+                      ),
+                                      ),
+                        ],
+                      ),
                     ),
                     const SizedBox(
                           height: 15,
                         ),
-              Column(
+              const Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,7 +117,7 @@ class Cities extends StatelessWidget {
                       CityBox(),
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                         height: 15,
                       ),
                   Row(
@@ -93,7 +130,7 @@ class Cities extends StatelessWidget {
                       CityBox(),
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                         height: 15,
                       ),
                       Row(

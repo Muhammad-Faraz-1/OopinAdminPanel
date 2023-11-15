@@ -93,6 +93,7 @@ class VideoArea extends StatelessWidget {
                 ),
                    
                 PopupMenuButton(
+                  color: Colors.white,
                   constraints: const BoxConstraints.expand(width: 180, height: 170),
                     itemBuilder: (context){
                       return [
@@ -130,15 +131,6 @@ class VideoArea extends StatelessWidget {
                   ),
                         ];
                     },
-                //     onSelected:(value){
-                //       if(value == 0){
-                // print("My account menu is selected.");
-                //       }else if(value == 1){
-                // print("Settings menu is selected.");
-                //       }else if(value == 2){
-                // print("Logout menu is selected.");
-                //       }
-                //     }
                   ),
               ],
             ),

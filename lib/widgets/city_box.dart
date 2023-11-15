@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opin_app/widgets/delete_city.dart';
 import 'package:opin_app/widgets/multi.dart';
 
 class CityBox extends StatelessWidget {
@@ -25,11 +26,28 @@ class CityBox extends StatelessWidget {
           const SizedBox(
             height: 5,
           ),
-          Multi(
-              color: Color.fromARGB(255, 255, 255, 255),
-              subtitle: 'Blackburn',
-              weight: FontWeight.w600,
-              size: 4),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Multi(
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  subtitle: 'Blackburn',
+                  weight: FontWeight.w600,
+                  size: 4),
+                  SizedBox(width: 70,),
+                  IconButton(onPressed: () {
+                              showDialog(
+                            context: context,
+                            builder: (context) => DeleteCity());
+                            },
+                            icon: Container(
+                              height: 15,
+                              width: 15,
+                              child: Image.asset('assets/bin.png',color: Colors.white,)),
+                            iconSize: 5,
+                            ),
+            ],
+          ),
         ],
       ),
     );
