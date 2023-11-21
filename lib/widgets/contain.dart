@@ -140,17 +140,9 @@ class Containers2 extends StatelessWidget {
   
     return Container(
       height: 120,
-      width: 160,
+      width: 170,
       decoration: BoxDecoration(
-        boxShadow: [
-          const BoxShadow(
-            color: Color.fromARGB(255, 252, 145, 63),
-            spreadRadius: 0.5,
-            blurRadius: 5,
-            offset: Offset(0, 0), // changes position of shadow
-          ),
-        ],
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(8),
         color: const Color.fromARGB(255, 252, 145, 63),
       ),
       child: Padding(
@@ -159,7 +151,7 @@ class Containers2 extends StatelessWidget {
           height: 148,
           width: 300,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(8),
             color: const Color.fromARGB(255, 3, 71, 80),
           ),
           child: Padding(
@@ -197,15 +189,6 @@ class Containers2 extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Multi(
-                            color: Color.fromARGB(255, 252, 145, 63),
-                            subtitle: '40',
-                            weight: FontWeight.w500,
-                            size: 3),
-                      ],
-                    ),
-                    Row(
-                      children: [
                        Multi(
                     color: Color.fromARGB(255, 252, 145, 63),
                     subtitle: name!,
@@ -213,6 +196,16 @@ class Containers2 extends StatelessWidget {
                     size: 3),
                       ],
                     ),
+                    Row(
+                      children: [
+                        Multi(
+                            color: Color.fromARGB(255, 252, 145, 63),
+                            subtitle: '40',
+                            weight: FontWeight.w500,
+                            size: 2.5),
+                      ],
+                    ),
+                    
                   ],
                 ),
                 Column(
@@ -226,7 +219,7 @@ class Containers2 extends StatelessWidget {
                         color: Color.fromARGB(255, 252, 145, 63),
                         subtitle: '555',
                         weight: FontWeight.w500,
-                        size: 3),
+                        size: 2.5),
                   ],
                 ),
                  Column(
@@ -240,7 +233,7 @@ class Containers2 extends StatelessWidget {
                             color: Color.fromARGB(255, 252, 145, 63),
                             subtitle: '100',
                             weight: FontWeight.w500,
-                            size: 3),
+                            size: 2.5),
                       ],
                     ),
                   ],

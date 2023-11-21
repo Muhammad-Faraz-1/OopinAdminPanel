@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:opin_app/widgets/cappbar.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/new_request_box.dart';
-import 'package:opin_app/widgets/request_bar.dart';
 
 class Requests extends StatelessWidget {
   const Requests({super.key});
@@ -15,55 +15,117 @@ class Requests extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-               Multi(
-                                  color: const Color.fromARGB(255, 255, 255, 255),
-                                  subtitle: 'Oopins Requests',
-                                  weight: FontWeight.w500,
-                                  size: 6),
-                                  const SizedBox(
-                                    height: 15,
-                                  ),
-              // ignore: prefer_const_constructors
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  
+                children: [
+                  Multi(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      subtitle: 'Oopins Requests',
+                      weight: FontWeight.w500,
+                      size: 6),
+                  const CappBar(),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
                   Column(
                     children: [
-                      // RequestBar(),
-                      // SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                     NewRequestBox(), SizedBox(height: 20,),
-                     NewRequestBox(), SizedBox(height: 20,),
-                     NewRequestBox(), SizedBox(height: 20,),
-                     NewRequestBox(), SizedBox(height: 20,),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
                   Column(
                     children: [
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
                   Column(
                     children: [
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
                   Column(
                     children: [
-                     NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
-                      NewRequestBox(), SizedBox(height: 20,),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      NewRequestBox(),
+                      SizedBox(
+                        height: 20,
+                      ),
                     ],
                   ),
                 ],

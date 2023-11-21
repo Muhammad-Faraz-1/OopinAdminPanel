@@ -53,8 +53,8 @@ class Appreciate extends StatelessWidget {
                         top: 110,
                         left: 10,
                         child: Container(
-                          height: 50,
-                          width: 120,
+                          height: 40,
+                          width: 100,
                           
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
@@ -67,7 +67,7 @@ class Appreciate extends StatelessWidget {
                             color: Color.fromARGB(255, 211, 255, 43),
                             subtitle: "View Sales",
                             weight: FontWeight.w400,
-                            size: 5),
+                            size:3.5),
                           ),
                         ),
                       ),

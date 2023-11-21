@@ -29,7 +29,7 @@ class RemoveService extends StatelessWidget {
                 size: 4),
             Multi(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                subtitle: 'You Want to Remove the this service?',
+                subtitle: 'You Want to Remove this sub service?',
                 weight: FontWeight.w600,
                 size: 4),
           ],
@@ -54,7 +54,8 @@ class RemoveService extends StatelessWidget {
                     ),
                     child: TextButton(
                       onPressed: () {
-                        Navigator.of(context).pop();
+                        Navigator.of(context,).pop();
+                          Navigator.of(context,).pop();
                       },
                       child: Multi(
                           color: const Color.fromARGB(255, 255, 255, 255),
@@ -65,7 +66,6 @@ class RemoveService extends StatelessWidget {
                   ),
                 ),
               ),
-              
             ],
           ),
         ],
@@ -74,34 +74,39 @@ class RemoveService extends StatelessWidget {
   }
 }
 
-
-
-
-
-
 class DeleteService2 extends StatelessWidget {
   const DeleteService2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15)
-      ),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
       child: AlertDialog(
         shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(15)
-        ),),
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+        ),
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         title: Container(
           width: 400,
           height: 140,
           child: Column(
             children: [
-              Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Delete User!', weight: FontWeight.w600, size:5),
-              const SizedBox(height: 15,),
-               Multi(color: const Color.fromARGB(255, 0, 0, 0), subtitle: 'Are you sure you want to delete this service?', weight: FontWeight.w500, size: 3.5),
-              const SizedBox(height: 15,),
+              Multi(
+                  color: const Color.fromARGB(255, 0, 0, 0),
+                  subtitle: 'Delete User!',
+                  weight: FontWeight.w600,
+                  size: 5),
+              const SizedBox(
+                height: 15,
+              ),
+              Multi(
+                  color: const Color.fromARGB(255, 0, 0, 0),
+                  subtitle: 'Are you sure you want to delete this service?',
+                  weight: FontWeight.w500,
+                  size: 3.5),
+              const SizedBox(
+                height: 15,
+              ),
               Container(
                 color: const Color.fromARGB(255, 252, 145, 63),
                 child: Padding(
@@ -110,27 +115,48 @@ class DeleteService2 extends StatelessWidget {
                     height: 60,
                     width: 400,
                     color: const Color.fromARGB(255, 255, 233, 217),
-                    child: Column(children: [
-                      const SizedBox(height: 7,),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 25,
-                              width: 25,
-                              child: Image.asset('assets/alert.png',color: const Color.fromARGB(255,119, 21, 5),)),
-                            const SizedBox(width: 7,),
-                            Multi(color: const Color.fromARGB(255,119, 21, 5), subtitle: 'Warning', weight: FontWeight.w500, size: 4),
-                          ],
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 7,
                         ),
-                      ),
-                      const SizedBox(height: 7,),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Multi(color: const Color.fromARGB(255, 197, 98, 70), subtitle: 'By deleting this service user will not be able to avail it.', weight: FontWeight.w500, size: 3),
-                      ),
-                    ],),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Row(
+                            children: [
+                              Container(
+                                  height: 25,
+                                  width: 25,
+                                  child: Image.asset(
+                                    'assets/alert.png',
+                                    color:
+                                        const Color.fromARGB(255, 119, 21, 5),
+                                  )),
+                              const SizedBox(
+                                width: 7,
+                              ),
+                              Multi(
+                                  color: const Color.fromARGB(255, 119, 21, 5),
+                                  subtitle: 'Warning',
+                                  weight: FontWeight.w500,
+                                  size: 4),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 7,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Multi(
+                              color: const Color.fromARGB(255, 197, 98, 70),
+                              subtitle:
+                                  'By deleting this service user will not be able to avail it.',
+                              weight: FontWeight.w500,
+                              size: 3),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               )
@@ -146,7 +172,6 @@ class DeleteService2 extends StatelessWidget {
                 Container(
                   height: 40,
                   width: 150,
-                  
                   child: Padding(
                     padding: const EdgeInsets.all(1.5),
                     child: Container(
@@ -178,7 +203,8 @@ class DeleteService2 extends StatelessWidget {
                       ),
                       child: TextButton(
                         onPressed: () {
-                          Navigator.of(context).pop();
+                          Navigator.of(context,).pop();
+                          Navigator.of(context,).pop();
                         },
                         child: Multi(
                             color: const Color.fromARGB(255, 0, 0, 0),
@@ -193,7 +219,6 @@ class DeleteService2 extends StatelessWidget {
             ),
           )
         ],
-        
       ),
     );
   }

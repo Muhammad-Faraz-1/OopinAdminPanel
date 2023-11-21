@@ -96,7 +96,8 @@ class DeleteUser extends StatelessWidget {
                     ),
                     child: TextButton(
                       onPressed: () {
-                        Navigator.of(context).pop();
+                        Navigator.of(context,).pop();
+                          
                       },
                       child: Multi(
                           color: const Color.fromARGB(255, 255, 255, 255),

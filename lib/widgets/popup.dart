@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/oopin_info.dart';
+import 'package:opin_app/widgets/reject_box.dart';
 
 class PopUp extends StatelessWidget {
   const PopUp({super.key});
@@ -18,7 +19,7 @@ class PopUp extends StatelessWidget {
           padding: const EdgeInsets.all(2),
           child: Container(
             height: 400,
-            width: 400,
+            width: 300,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Color.fromARGB(255, 3, 71, 80),
@@ -42,7 +43,7 @@ class PopUp extends StatelessWidget {
                     children: [
                       Container(
                         height: 35,
-                        width: 120,
+                        width: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Color.fromARGB(255, 252, 145, 63),
@@ -57,7 +58,7 @@ class PopUp extends StatelessWidget {
                             child: TextButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
-                                // showDialog(context: context, builder: (context)=>PopUp());
+                                
                               },
                               child: Multi(
                                   color: Color.fromARGB(255, 255, 255, 255),
@@ -70,7 +71,7 @@ class PopUp extends StatelessWidget {
                       ),
                       Container(
                         height: 35,
-                        width: 200,
+                        width: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Color.fromARGB(255, 252, 145, 63),
@@ -84,12 +85,12 @@ class PopUp extends StatelessWidget {
                             ),
                             child: TextButton(
                               onPressed: () {
-                                Navigator.of(context).pop();
+                                showDialog(context: context, builder: (context)=>RejectBox());
                                
                               },
                               child: Multi(
                                   color: Color.fromARGB(255, 255, 255, 255),
-                                  subtitle: 'Reject with message',
+                                  subtitle: 'Reject ',
                                   weight: FontWeight.w600,
                                   size: 4),
                             ),

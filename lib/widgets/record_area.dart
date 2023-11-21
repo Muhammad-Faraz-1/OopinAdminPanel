@@ -7,15 +7,15 @@ class RecordArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 10,),
+      padding: EdgeInsets.symmetric(vertical: 5,),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              VideoArea(),SizedBox(width:10,),
-              VideoArea(),SizedBox(width: 10,),
+              VideoArea(),SizedBox(width:5,),
+              VideoArea(),SizedBox(width: 5,),
               VideoArea(),
              ],
           ),

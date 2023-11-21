@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/diagonal_box.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/verticalcontainer.dart';
 
 class VideoArea extends StatelessWidget {
   const VideoArea({super.key});
@@ -9,7 +10,7 @@ class VideoArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 240,
-      width: 340,
+      width: 320,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: const Color.fromARGB(255, 3, 71, 80)),
@@ -18,39 +19,39 @@ class VideoArea extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-           
-            Stack(
-              children: [
-                Container(
-                  height: 150,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: Colors.black,
-                  ),
-                  child:  DiagonalContainer(),
-                ),
-                Positioned(
-                  bottom: 10,
-                  right: 10,
-                  child: Container(
-                    height: 20,
-                    width:40,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Colors.black45,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5,vertical:3 ),
-                      child: Multi(color: const Color.fromARGB(255, 255, 255, 255),
-                                          subtitle: '15:20',
-                                          weight: FontWeight.w400,
-                                          size: 3),
-                    ),
-                  ),
-                )
-              ],
-            ),
+           verticalContainer(),
+            // Stack(
+            //   children: [
+            //     Container(
+            //       height: 150,
+            //       width: 350,
+            //       decoration: BoxDecoration(
+            //         borderRadius: BorderRadius.circular(15),
+            //         color: Colors.black,
+            //       ),
+            //       child:  DiagonalContainer(),
+            //     ),
+            //     Positioned(
+            //       bottom: 10,
+            //       right: 10,
+            //       child: Container(
+            //         height: 20,
+            //         width:40,
+            //         decoration: BoxDecoration(
+            //           borderRadius: BorderRadius.circular(25),
+            //           color: Colors.black45,
+            //         ),
+            //         child: Padding(
+            //           padding: const EdgeInsets.symmetric(horizontal: 5,vertical:3 ),
+            //           child: Multi(color: const Color.fromARGB(255, 255, 255, 255),
+            //                               subtitle: '15:20',
+            //                               weight: FontWeight.w400,
+            //                               size: 3),
+            //         ),
+            //       ),
+            //     )
+            //   ],
+            // ),
             const SizedBox(
               height: 5,
             ),

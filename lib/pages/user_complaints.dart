@@ -13,7 +13,7 @@ class UserComplaints extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Multi(color: Colors.white, subtitle: 'User Complaints', weight: FontWeight.w600, size: 5),
+              Multi(color: Colors.white, subtitle: 'User Complaints', weight: FontWeight.w500, size: 6),
               SizedBox(height: 20,),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

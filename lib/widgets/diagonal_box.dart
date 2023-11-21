@@ -33,8 +33,8 @@ class DiagonalContainer extends StatelessWidget {
                       height: 150,
                     color: Colors.green,
                     child: Image.asset(
-                      'assets/lahore.jpg',
-                      fit: BoxFit.fill,
+                      'assets/person2.jpg',
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
@@ -48,8 +48,8 @@ class DiagonalContainer extends StatelessWidget {
                     height: 150,
                     color: Colors.blue,
                     child: Image.asset(
-                      'assets/city2.jpg',
-                      fit: BoxFit.cover,
+                      'assets/person1.jpg',
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
@@ -91,3 +91,4 @@ class DiagonalClipper2 extends CustomClipper<Path> {
     return false;
   }
 }
+

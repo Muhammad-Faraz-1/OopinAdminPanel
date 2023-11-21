@@ -19,8 +19,7 @@ class Multi extends StatelessWidget {
   style: GoogleFonts.montserrat(
     textStyle: TextStyle(color: color, letterSpacing: 0.2,fontSize: size?.sp,fontWeight: weight,),
   ),
-  textAlign: TextAlign.start,
-  softWrap: true,
+  textAlign: TextAlign.start,  
 ),
 
     );

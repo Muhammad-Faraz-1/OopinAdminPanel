@@ -20,7 +20,7 @@ class HelpDesk extends StatelessWidget {
             Multi(
                 color: const Color.fromARGB(255, 255, 255, 255),
                 subtitle: 'Help Desk',
-                weight: FontWeight.w600,
+                weight: FontWeight.w500,
                 size: 6),
             const SizedBox(
               height: 15,

@@ -277,8 +277,29 @@ class _SideBarState extends State<SideBar> {
                         size: 4),
                   ),
                 ]),
+                Row(children: [
+                  Container(
+                      height: 15,
+                      width: 15,
+                      child: Image.asset('assets/help.png',
+                          color: Color.fromARGB(255, 255, 255, 255))),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  GestureDetector(
+                     onTap: () {
+                              Provider11.currentActive(9);
+                            },
+                    child: Multi(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        subtitle: 'Policy',
+                        weight: FontWeight.w500,
+                        size: 4),
+                  ),
+                ]),
+                
                 SizedBox(
-                  height: 180,
+                  height: 160,
                 )
               ]),
         ));

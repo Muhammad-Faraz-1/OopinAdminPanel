@@ -5,6 +5,10 @@ class Provider1 extends ChangeNotifier {
   var status = 1;
   bool ishover = false;
   String? ServiceName;
+  String? ServiceImage;
+  bool buttonVisible = false;
+  var CurrentVal;
+  String? Policyval;
 
   List<SubServices> subservices = [];
 
@@ -31,8 +35,26 @@ class Provider1 extends ChangeNotifier {
     notifyListeners();
   }
 
-  serviceName(String name) {
+  serviceName(String name, String image) {
     ServiceName = name;
+    ServiceImage = image;
+    notifyListeners();
+  }
+
+  ButtonVisibleVal(showButton) {
+    buttonVisible = showButton;
+    notifyListeners();
+  }
+
+  dropdownvalue(var complain) {
+    lastAction = complain;
+    print(lastAction);
+    notifyListeners();
+  }
+
+  policyval(val) {
+    Policyval = val;
+    print(Policyval);
     notifyListeners();
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/appreciate.dart';
 import 'package:opin_app/widgets/browser.dart';
+import 'package:opin_app/widgets/cappbar.dart';
 import 'package:opin_app/widgets/contain.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/statistic_column.dart';
@@ -21,13 +22,16 @@ class Dashboard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                child: Multi(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                    subtitle: 'DashBoard',
-                    weight: FontWeight.w500,
-                    size: 6),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Multi(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      subtitle: 'DashBoard',
+                      weight: FontWeight.w500,
+                      size: 6),
+                      CappBar(),
+                ],
               ),
               SizedBox(
                 height: 20,
