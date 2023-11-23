@@ -10,7 +10,7 @@ class OopinBox extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 220,
+          height: 250,
           width: 220,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),

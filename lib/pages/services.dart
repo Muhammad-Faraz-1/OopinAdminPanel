@@ -35,7 +35,7 @@ class Services extends StatelessWidget {
               children: [
                 Container(
                   height: 35,
-                  width: 120,
+                  width: 140,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     color: const Color.fromARGB(255, 252, 145, 63),
@@ -104,7 +104,7 @@ class Services extends StatelessWidget {
               ],
             ),
             Container(
-              height: 530,
+              height: 510,
               width: 1350,
               child: SingleChildScrollView(
                 child: Column(

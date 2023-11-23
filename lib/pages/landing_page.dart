@@ -10,6 +10,7 @@ class LandingPage extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: double.infinity,
+      color: const Color.fromARGB(255, 3, 71, 80),
       child:Row(
         children: [
           Column(children: [SideBar()],),

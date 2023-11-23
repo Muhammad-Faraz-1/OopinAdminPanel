@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/widgets/contactus_box.dart';
-import 'package:opin_app/widgets/multi.dart';
 
 class ContactUs extends StatelessWidget {
   const ContactUs({super.key});

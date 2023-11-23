@@ -7,7 +7,7 @@ class ContactusBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+      height: 262,
       width: 250,
       child: Stack(
         children: [
@@ -45,7 +45,7 @@ class ContactusBox extends StatelessWidget {
             top: 3,
             left: 3,
             child: Container(
-              height: 214,
+              height: 255,
                 width: 244,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -104,7 +104,7 @@ class ContactusBox extends StatelessWidget {
                     ),
                     SizedBox(height: 15,),
                     Container(
-                      height: 100,
+                      height: 140,
                       width: 240,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
@@ -121,6 +121,7 @@ class ContactusBox extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(5),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Multi(color: Colors.white, subtitle: 'Description:', weight: FontWeight.w600, size: 3.5),SizedBox(height: 10,),
                               Multi(color: Colors.white, subtitle: 'askad sadj  sbdjksdbdbsajkd sdshhdhasjk asdjhsdhasdb...', weight: FontWeight.w600, size: 3.5),

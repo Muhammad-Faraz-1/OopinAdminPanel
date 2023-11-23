@@ -3,6 +3,7 @@ import 'package:opin_app/pages/privacy_policy.dart';
 import 'package:opin_app/pages/tableofcontext.dart';
 import 'package:opin_app/statemanager/provider.dart';
 import 'package:opin_app/widgets/multi.dart';
+import 'package:opin_app/widgets/policypopup.dart';
 import 'package:provider/provider.dart';
 
 class Policy extends StatelessWidget {
@@ -224,13 +225,13 @@ class Policy extends StatelessWidget {
                         ),
                         child: TextButton(
                           onPressed: () {
-                            // showDialog(
-                            //     context: context,
-                            //     builder: ((context) => const AddCity()));
+                            showDialog(
+                                context: context,
+                                builder: ((context) => const PolicyPopup()));
                           },
                           child: Multi(
                               color: const Color.fromARGB(255, 255, 255, 255),
-                              subtitle: 'Edit',
+                              subtitle: 'Add',
                               weight: FontWeight.w600,
                               size: 4),
                         ),

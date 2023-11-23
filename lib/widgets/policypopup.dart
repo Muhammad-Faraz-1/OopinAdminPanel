@@ -11,7 +11,7 @@ class PolicyPopup extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 3, 71, 80),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
         title: Container(
-          height: 300,
+          height: 320,
           width:400,
           child: Form(
             child: Column(

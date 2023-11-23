@@ -9,6 +9,7 @@ class Provider1 extends ChangeNotifier {
   bool buttonVisible = false;
   var CurrentVal;
   String? Policyval;
+  var visible=1;
 
   List<SubServices> subservices = [];
 
@@ -55,6 +56,11 @@ class Provider1 extends ChangeNotifier {
   policyval(val) {
     Policyval = val;
     print(Policyval);
+    notifyListeners();
+  }
+  currentvisible(val) {
+    visible = val;
+    print(visible);
     notifyListeners();
   }
 }

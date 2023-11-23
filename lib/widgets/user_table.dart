@@ -68,7 +68,7 @@ class OopinTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 525,
+      height: 510,
       // width: 500,
       child: const SingleChildScrollView(
         child: Column(
