@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/statemanager/provider.dart';
-import 'package:opin_app/widgets/drop_down.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:provider/provider.dart';
 
@@ -34,55 +33,50 @@ class _SideBarState extends State<SideBar> {
               Column(
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
+                  GestureDetector(
+                    onTap: () {
                             Provider11.currentActive(0);
                           },
-                          child: Container(
+                    child: Column(
+                        // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
                               height: 21,
                               width: 21,
                               child: Image.asset('assets/dashboard.png',
                                   color: Color.fromARGB(215, 215, 215, 215))),
-                        ),
-                        SizedBox(height: 5,),
-                        Multi(
-                            color: Colors.white,
-                            subtitle: 'Dashboard',
-                            weight: FontWeight.w200,
-                            size: 2.5)
-                      ]),
+                          SizedBox(height: 5,),
+                          Multi(
+                              color: Colors.white,
+                              subtitle: 'Dashboard',
+                              weight: FontWeight.w200,
+                              size: 2.5)
+                        ]),
+                  ),
                   SizedBox(
                     height: 15,
                   ),
-                  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
+                  GestureDetector(
+                    onTap: () {
                             Provider11.currentActive(1);
                           },
-                          // child: Icon(
-                          //   Icons.people_outline,
-                          //   size: 35,
-                          //   color: Colors.white,
-                          // ),
-                          child: Container(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
                               height: 21,
                               width: 21,
                               child: Image.asset('assets/group.png',
                                   color: Color.fromARGB(
                                       215, 215, 215, 215))),
-                        ),
-                        SizedBox(height: 5,),
-                        Multi(
-                            color: Colors.white,
-                            subtitle: 'Users',
-                            weight: FontWeight.w200,
-                            size: 2.5)
-                      ]),
+                          SizedBox(height: 5,),
+                          Multi(
+                              color: Colors.white,
+                              subtitle: 'Users',
+                              weight: FontWeight.w200,
+                              size: 2.5)
+                        ]),
+                  ),
                   SizedBox(
                     height: 15,
                   ),
@@ -111,88 +105,142 @@ class _SideBarState extends State<SideBar> {
                   //     ]),
                   //   ],
                   // ),
-                  Column(children: [
-                    GestureDetector(
-                      onTap: () {
-                        Provider11.currentActive(0);
+                  // GestureDetector(
+                  //   onTap: () {
+                  //       Provider11.currentActive(3);
+                  //     },
+                  //   child: Column(children: [
+                  //     Container(
+                  //         height: 21,
+                  //         width: 21,
+                  //         child: Image.asset('assets/report.png',
+                  //             color: Color.fromARGB(215, 215, 215, 215))),
+                  //     SizedBox(height: 5,),
+                  //     Multi(
+                  //         color: Colors.white,
+                  //         subtitle: 'Complains',
+                  //         weight: FontWeight.w200,
+                  //         size: 2.5)
+                  //   ]),
+                  // ),
+                  GestureDetector(
+                    onTap: () {
+                        Provider11.currentActive(3);
                       },
-                      child: Container(
+                    child: Column(children: [
+                      Container(
                           height: 21,
                           width: 21,
-                          child: Image.asset('assets/report.png',
+                          child: Image.asset('assets/smartphone.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
-                    ),
-                    SizedBox(height: 5,),
-                    Multi(
-                        color: Colors.white,
-                        subtitle: 'Complains',
-                        weight: FontWeight.w200,
-                        size: 2.5)
-                  ]),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Management',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
                   SizedBox(
                     height: 15,
                   ),
-                  Column(children: [
-                    GestureDetector(
-                      onTap: () {
-                        Provider11.currentActive(3);
+                  GestureDetector(
+                    onTap: () {
+                        Provider11.currentActive(4);
                       },
-                      child: Container(
+                    child: Column(children: [
+                      Container(
                           height: 21,
                           width: 21,
                           child: Image.asset('assets/camera.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
-                    ),
-                    SizedBox(height: 5,),
-                    Multi(
-                        color: Colors.white,
-                        subtitle: 'Recordings',
-                        weight: FontWeight.w200,
-                        size: 2.5)
-                  ]),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Recordings',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
                   SizedBox(height: 15,),
-                  Column(children: [
-                    GestureDetector(
-                      onTap: () {
-                        Provider11.currentActive(4);
-                      },
-                      child: Container(
-                          height: 21,
-                          width: 21,
-                          child: Image.asset('assets/settings.png',
-                              color: Color.fromARGB(215, 215, 215, 215))),
-                    ),
-                    SizedBox(height: 5,),
-                    Multi(
-                        color: Colors.white,
-                        subtitle: 'Services',
-                        weight: FontWeight.w200,
-                        size: 2.5)
-                  ]),
-                  SizedBox(height: 15,),
-                  Column(children: [
-                    GestureDetector(
-                      onTap: () {
+                  GestureDetector(
+                    onTap: () {
                         Provider11.currentActive(5);
                       },
-                      child: Container(
+                    child: Column(children: [
+                      Container(
                           height: 21,
                           width: 21,
                           child: Image.asset('assets/request2.png',
                               color: Color.fromARGB(215, 215, 215, 215))),
-                    ),
-                    SizedBox(height: 5,),
-                    Multi(
-                        color: Colors.white,
-                        subtitle: 'Requests',
-                        weight: FontWeight.w200,
-                        size: 2.5)
-                  ]),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Oopin Requests',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
                   SizedBox(height: 15,),
-                      
+                  GestureDetector(
+                     onTap: () {
+                        Provider11.currentActive(6);
+                      },
+                    child: Column(children: [
+                      Container(
+                          height: 21,
+                          width: 21,
+                          child: Image.asset('assets/layout.png',
+                              color: Color.fromARGB(215, 215, 215, 215))),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Features',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
+                  SizedBox(height: 15,),
+                      GestureDetector(
+                    onTap: () {
+                        Provider11.currentActive(3);
+                      },
+                    child: Column(children: [
+                      Container(
+                          height: 21,
+                          width: 21,
+                          child: Image.asset('assets/support.png',
+                              color: Color.fromARGB(215, 215, 215, 215))),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Help Desk',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
+                  SizedBox(height: 15,),
+                  GestureDetector(
+                    onTap: () {
+                        Provider11.currentActive(3);
+                      },
+                    child: Column(children: [
+                      Container(
+                          height: 21,
+                          width: 21,
+                          child: Image.asset('assets/report.png',
+                              color: Color.fromARGB(215, 215, 215, 215))),
+                      SizedBox(height: 5,),
+                      Multi(
+                          color: Colors.white,
+                          subtitle: 'Agora ',
+                          weight: FontWeight.w200,
+                          size: 2.5)
+                    ]),
+                  ),
                 ],
               ),
-              SizedBox(height: 100,),
+              // SizedBox(height: 100,),
               Column(
                           children: [
                             Container(

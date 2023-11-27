@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class Provider1 extends ChangeNotifier {
   var lastAction;
+  var page = 'users';
+  var page2 = 'services';
   var status = 1;
   bool ishover = false;
   String? ServiceName;
@@ -9,7 +11,7 @@ class Provider1 extends ChangeNotifier {
   bool buttonVisible = false;
   var CurrentVal;
   String? Policyval;
-  var visible=1;
+  var visible = 1;
 
   List<SubServices> subservices = [];
 
@@ -21,6 +23,17 @@ class Provider1 extends ChangeNotifier {
   currentActive(var pressed) {
     lastAction = pressed;
     print(lastAction);
+    notifyListeners();
+  }
+
+  userpage(var pressed) {
+    page = pressed;
+    print(page);
+    notifyListeners();
+  }
+  userpage2(var pressed) {
+    page2 = pressed;
+    print(page);
     notifyListeners();
   }
 
@@ -58,6 +71,7 @@ class Provider1 extends ChangeNotifier {
     print(Policyval);
     notifyListeners();
   }
+
   currentvisible(val) {
     visible = val;
     print(visible);

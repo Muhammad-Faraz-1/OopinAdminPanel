@@ -13,7 +13,7 @@ class VideoArea extends StatelessWidget {
       width: 320,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-          color: const Color.fromARGB(255, 3, 71, 80)),
+          color: Color.fromARGB(255, 255, 255, 255)),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10),
         child: Column(
@@ -74,19 +74,19 @@ class VideoArea extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Multi(
-                    color: const Color.fromARGB(255, 255, 255, 255),
+                    color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Suggests to Sami',
                     weight: FontWeight.w500,
                     size: 5),
                      Multi(
-                    color: const Color.fromARGB(255, 255, 255, 255),
+                    color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Faraz',
-                    weight: FontWeight.w300,
+                    weight: FontWeight.w500,
                     size: 3),
                      Multi(
-                    color: const Color.fromARGB(255, 255, 255, 255),
+                    color: Color.fromARGB(255, 0, 0, 0),
                     subtitle: 'Date: 12/Dec/2023',
-                    weight: FontWeight.w200,
+                    weight: FontWeight.w500,
                     size: 3),
                   ],
                 ),
@@ -94,7 +94,7 @@ class VideoArea extends StatelessWidget {
                 ),
                    
                 PopupMenuButton(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 255, 255, 255),
                   constraints: const BoxConstraints.expand(width: 180, height: 170),
                     itemBuilder: (context){
                       return [

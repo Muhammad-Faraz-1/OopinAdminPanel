@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opin_app/pages/cities.dart';
 import 'package:opin_app/pages/help_desk.dart';
+import 'package:opin_app/pages/inapp_management.dart';
 import 'package:opin_app/pages/new_dashboard.dart';
 import 'package:opin_app/pages/oopin_complain.dart';
 import 'package:opin_app/pages/oopin_page.dart';
@@ -47,8 +48,8 @@ class screen extends StatelessWidget {
                 ? const UsersPage()
                 : Provider11.lastAction == 2
                     ? const OopinPage()
-                    : Provider11.lastAction == 'User Complains'
-                        ? const UserComplaints()
+                    : Provider11.lastAction == 3
+                        ? const InAppManagement()
                         : Provider11.lastAction == 'Oopin Complains'
                         ? const OopinComplains()
                         : Provider11.lastAction == 4
@@ -56,7 +57,7 @@ class screen extends StatelessWidget {
                             : Provider11.lastAction == 5
                                 ? Services()
                                 : Provider11.lastAction == 6
-                                    ? const Requests()
+                                    ? const Features()
                                     : Provider11.lastAction == 7
                                         ? const Cities()
                                         : Provider11.lastAction == 8

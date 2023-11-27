@@ -99,22 +99,50 @@ class NewServiceBox extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        height: 180,
+        width: 600,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: Colors.white ,
-        ),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+                blurRadius: 5,
+                color: Colors.black.withOpacity(0.2),
+                spreadRadius: 2,
+                offset: Offset(2, 2))
+          ]),
         child: Padding(
-          padding: const EdgeInsets.all(2),
-          child: Container(
-            height: 180,
-            width: 500,
-            decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-            color: Color.fromARGB(255, 3, 71, 80),
-        ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-              child: Row(
+          padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+          child: Row(
+            children: [
+               Flexible(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Multi(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        subtitle: servicename,
+                        weight: FontWeight.w600,
+                        size: 7),
+                    Multi(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        subtitle: 'Description',
+                        weight: FontWeight.w500,
+                        size: 5),
+                    Flexible(
+                      child: Multi(
+                          color: Color.fromARGB(255, 2, 2, 2),
+                          subtitle:
+                              'The foodservice (US English) or catering (British English) industry includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school and hospital cafeterias, catering operations, and many other formats.includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school ',
+                          weight: FontWeight.w500,
+                          size: 3),
+                    ),
+                    SizedBox(height: 10,),
+                    
+                  ],
+                ),
+              ),
+              Column(
                 children: [
                   MouseRegion(
                     onEnter: (event) {
@@ -134,14 +162,14 @@ class NewServiceBox extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(5),
                             child: Container(
-                              height: 200,
+                              height: 100,
                               width: 150,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(05),
                                 color: Colors.transparent,
                               ),
                               child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(25),
+                                  borderRadius: BorderRadius.circular(5),
                                   // child: Image(image: NetworkImage(serviceimage!),
                                   // opacity:Provider11.buttonVisible==true? AlwaysStoppedAnimation(1.0):AlwaysStoppedAnimation(0.0),
                                   // )
@@ -164,60 +192,40 @@ class NewServiceBox extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Flexible(
-                    child: Column(
-                      children: [
-                        Multi(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            subtitle: servicename,
-                            weight: FontWeight.w500,
-                            size: 5),
-                        Multi(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            subtitle: 'Description',
-                            weight: FontWeight.w400,
-                            size: 4),
-                        Flexible(
-                          child: Multi(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              subtitle:
-                                  'The foodservice (US English) or catering (British English) industry includes the businesses, institutions, and companies which prepare meals outside the home. It includes restaurants, grocery stores, school and hospital cafeterias, catering operations, and many other formats.',
-                              weight: FontWeight.w400,
-                              size: 3),
-                        ),
-                        Container(
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                height: 30,
+                width: 100,
+                child: GestureDetector(
+                  onTap: () {
+                    showDialog(
+                        context: context, builder: ((context) => EditService()));
+                    Provider11.serviceName(servicename!, serviceimage!);
+                  },
+                  child: Container(
                     height: 30,
                     width: 100,
-                    child: GestureDetector(
-                      onTap: () {
-                        showDialog(
-                            context: context, builder: ((context) => EditService()));
-                        Provider11.serviceName(servicename!, serviceimage!);
-                      },
-                      child: Container(
-                        height: 30,
-                        width: 100,
-                        decoration: const BoxDecoration(
-                          // borderRadius: BorderRadius.circular(15),
-                          color: Color.fromARGB(255, 3, 71, 80),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Multi(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              subtitle: 'Edit Service',
-                              weight: FontWeight.w600,
-                              size: 4),
-                        ),
-                      ),
+                    decoration: const BoxDecoration(
+                      // borderRadius: BorderRadius.circular(15),
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Multi(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          subtitle: 'Edit Service',
+                          weight: FontWeight.w600,
+                          size: 4),
                     ),
                   ),
-                      ],
-                    ),
-                  )
+                ),
+              ),
                 ],
               ),
-            ),
+             
+            ],
           ),
         ),
       ),

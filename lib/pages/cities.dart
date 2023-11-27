@@ -33,33 +33,7 @@ class Cities extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  height: 35,
-                  width: 120,
-                  decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 252, 145, 63),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(1.5),
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 3, 71, 80),
-                      ),
-                      child: TextButton(
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: ((context) => const AddCity()));
-                        },
-                        child: Multi(
-                            color: const Color.fromARGB(255, 255, 255, 255),
-                            subtitle: 'Add City',
-                            weight: FontWeight.w600,
-                            size: 4),
-                      ),
-                    ),
-                  ),
-                ),
+                
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -108,46 +82,7 @@ class Cities extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                  ],
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                  ],
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                    CityBox(),
-                  ],
-                ),
-              ],
-            ),
+            
           ],
         ),
       ),

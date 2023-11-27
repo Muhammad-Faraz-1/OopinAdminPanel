@@ -34,7 +34,7 @@ class AddCity extends StatelessWidget {
                               color: const Color.fromARGB(255, 255, 255, 255),
                               subtitle: 'Add City',
                               weight: FontWeight.w600,
-                              size: 5),
+                              size: 8),
               ),
                             const Row(
                               children: [
@@ -59,7 +59,7 @@ class AddCity extends StatelessWidget {
                                               vertical: 5, horizontal: 5),
                                           hintStyle: TextStyle(
                                               color: Color.fromARGB(255, 255, 255, 255),
-                                              fontWeight: FontWeight.w300),
+                                              fontWeight: FontWeight.w300,),
                                           focusedBorder: UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                   width: 3,

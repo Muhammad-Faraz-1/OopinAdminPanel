@@ -3,6 +3,7 @@ import 'package:opin_app/widgets/add_service.dart';
 import 'package:opin_app/widgets/cappbar.dart';
 import 'package:opin_app/widgets/multi.dart';
 import 'package:opin_app/widgets/service_box.dart';
+import 'package:opin_app/widgets/top_bar.dart';
 
 class Services extends StatelessWidget {
   
@@ -16,17 +17,7 @@ class Services extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Multi(
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                    subtitle: 'Services',
-                    weight: FontWeight.w500,
-                    size: 6),
-                    CappBar(),
-              ],
-            ),
+            TopBar(),
             const SizedBox(
               height: 10,
             ),
@@ -62,49 +53,74 @@ class Services extends StatelessWidget {
                     ),
                   ),
                 ),
-                Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Multi(color: Colors.white, subtitle: 'Search:', weight: FontWeight.w200, size: 4),
-                      const SizedBox(width: 10,),
-                      Container(
-                          height: 40,
-                          width: 200,
-                          child: TextFormField(
-                            // controller: name_service,
-                            cursorColor: Colors.white,
-                            style: const TextStyle(color: Colors.white),
-                            decoration: const InputDecoration(
-                              contentPadding: EdgeInsets.symmetric(
-                                   horizontal: 5),
-                              hintStyle: TextStyle(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  fontWeight: FontWeight.w300),
-                              focusedBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                      width: 3,
-                                      color: const Color.fromARGB(
-                                          255, 252, 145, 63))),
-                              enabledBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                      width: 3,
-                                      color: const Color.fromARGB(
-                                          255, 252, 145, 63))),
-                              hintText: 'Search Service',
-                              filled: true,
-                              fillColor: Color.fromARGB(255, 3, 71, 80),
-                              border: UnderlineInputBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(15))),
+                Container(
+                        height: 35,
+                        width: 280,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  blurRadius: 5,
+                                  color: Colors.black.withOpacity(0.2),
+                                  spreadRadius: 2,
+                                  offset: Offset(2, 2))
+                            ]),
+                        child: Row(
+                          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: 5,
                             ),
-                          ),
+                            Multi(
+                                color: Colors.black,
+                                subtitle: 'Search:',
+                                weight: FontWeight.w500,
+                                size: 4),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Container(
+                              height: 30,
+                              width: 200,
+                              child: TextFormField(
+                                // controller: name_service,
+                                cursorColor: Colors.black,
+                                style: const TextStyle(
+                                    color: Colors.black, fontSize: 15),
+                                decoration: const InputDecoration(
+                                  // contentPadding: EdgeInsets.symmetric(
+                                  //      horizontal: 5),
+                                  hintStyle: TextStyle(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.w300),
+                                  focusedBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                          width: 3,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255))),
+                                  enabledBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(
+                                          width: 3,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 254))),
+                                  hintText: 'Search by Email',
+                                  filled: true,
+                                  fillColor: Color.fromARGB(255, 255, 255, 255),
+                                  border: UnderlineInputBorder(
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(15))),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      
-                    ],
-                  )
+                      )
               ],
             ),
             Container(
-              height: 510,
+              height: 500,
               width: 1350,
               child: SingleChildScrollView(
                 child: Column(

@@ -13,6 +13,7 @@ class DeleteCity extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 3, 71, 80),
         
         title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Align(
                       alignment: Alignment.topRight,
@@ -24,9 +25,9 @@ class DeleteCity extends StatelessWidget {
                     ),
             Multi(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                subtitle: 'Are You Sure',
+                subtitle: 'Are You Sure!',
                 weight: FontWeight.w600,
-                size: 4),
+                size: 8),
                  Multi(
                 color: const Color.fromARGB(255, 255, 255, 255),
                 subtitle: 'You Want to Delete this City?',
