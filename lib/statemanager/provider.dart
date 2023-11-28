@@ -4,8 +4,10 @@ class Provider1 extends ChangeNotifier {
   var lastAction;
   var page = 'users';
   var page2 = 'services';
+  var page3 = 'city';
   var status = 1;
   bool ishover = false;
+  bool ishover2 = false;
   String? ServiceName;
   String? ServiceImage;
   bool buttonVisible = false;
@@ -36,6 +38,11 @@ class Provider1 extends ChangeNotifier {
     print(page);
     notifyListeners();
   }
+  // userpage3(var pressed) {
+  //   page3 = pressed;
+  //   print(page);
+  //   notifyListeners();
+  // }
 
   currentpressed(var index) {
     status = index;
@@ -45,6 +52,11 @@ class Provider1 extends ChangeNotifier {
 
   ishovering(bool hover) {
     ishover = hover;
+    print(ishover);
+    notifyListeners();
+  }
+  ishovering2(bool hover) {
+    ishover2 = hover;
     print(ishover);
     notifyListeners();
   }
